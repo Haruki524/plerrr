@@ -1,0 +1,112 @@
+.resume {
+    background-color: #222;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.resume h1 {
+    color: #64ffda;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+    text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+}
+
+.resume-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resume-box {
+    width: calc(50% - 40px);
+    margin: 20px;
+    background-color: rgba(17, 34, 64, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    color: #ccd6f6;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.resume-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(100, 255, 218, 0.2);
+}
+
+.resume-box h3 {
+    color: #64ffda;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.resume-box h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #64ffda;
+}
+
+.resume-item {
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.resume-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #64ffda;
+}
+
+.resume-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.resume-item p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .resume-box {
+        width: 100%;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.resume-box {
+    animation: slide-up 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.resume-box:nth-child(2) {
+    animation-delay: 0.2s;
+}

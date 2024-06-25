@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="assets/portofolio.zip" class="rel">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css" class="rel">
+    <link rel="stylesheet" href="style2.css" class="rel">
+    <link rel="stylesheet" href="style3.css" class="rel">
+    <link rel="stylesheet" href="style4.css" class="rel">
+    <link rel="stylesheet" href="style5.css" class="rel">
+    <link rel="stylesheet" href="style6.css" class="rel">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!--<audio>
+        <source src="assets/Come_Inside_Of_My_Heart(256k).mp3" type="audio/mp3">
+    </audio>-->
+
+    <script>
+        window.addEventListener('load', function() {
+            const heroTextSlideLeftElements = document.querySelectorAll('#hero-text .slide-left');
+            slideLeftElements.forEach(function(element, index) {
+                element.style.animationDelay = (index * 0.1) + 's';
+            });           
+        });
+
+        window.addEventListener('load', function() {
+            var slideRightElements = document.querySelectorAll('.slide-right');
+            slideRightElements.forEach(function(element, index) {
+                element.style.animationDelay = (index * 0.4) + 's';
+            });           
+        });
+
+        window.addEventListener('load', function() {
+            var skillBars = document.querySelectorAll('.skill-progress');
+
+            skillBars.forEach(function(bar) {
+                var targetWidth = bar.getAttribute('data-percent');
+                var currentWidth = 0;
+                var interval = setInterval(function() {
+                    if (currentWidth >= parseInt(targetWidth)) {
+                        clearInterval(interval);
+                        return;
+                    }
+                    currentWidth += 1;
+                    bar.style.width = currentWidth + '%';
+                    bar.querySelector('span').textContent = currentWidth + '%';
+                    if (currentWidth % 1 === 0) {
+                        setTimeout(function() {}, 25); 
+                    }
+                }, 37); 
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+
+    <!--<audio id="background-music" autoplay loop>
+        <source src="assets/Come_Inside_Of_My_Heart(256k).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>-->
+
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo slide-left">
+                    <i class="fa-solid fa-a slide-left"></i>
+                    <div class="logo-text slide-left">Alfani Eka</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks slide-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#skills">Skill</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic slide-left">
+                    <img src="image/1002.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text slide-right">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Alfani Eka Pratama Yuda</h1>
+                    <p>Saya merupakan Mahasiswa S1 jurusan Teknik Informatika di Universitas Nahdlatul Ulama Sunan Giri Bojonegoro yang beralamatkan di Jl.Jenderal A Yani 62115 Bojonegoro Jawa Timur, Saat ini saya berusia 20 tahun.
+                    </p>
+                    <div class="btn-group">
+                        <a href="assets/portofolio.zip" class="btn active">Download CV</a>
+                        <a href="#contact" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100085929996602" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/i.eat.my.ssd.256.gb?igsh=cHVuZGVtbnk3Mnow" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="https://pin.it/3HVfDx8oO" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>         
+            <br>
+
+            <section id="skills" class="skills">
+                <div class="wrapper">
+                    <h1>My Skills</h1>
+                    <div class="skills-container">
+                        <div class="skill-box">
+                            <i class="fab fa-html5"></i>
+                            <h4>HTML5</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percent="72%"><span>72%</span></div>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fab fa-css3-alt"></i>
+                            <h4>CSS3</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percent="68%"><span>68%</span></div>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fab fa-js"></i>
+                            <h4>JavaScript</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percent="60%"><span>60%</span></div>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fab fa-php"></i>
+                            <h4>Php</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percent="52%"><span>52%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio" class="portfolio">
+                <div class="wrapper">
+                    <h1>My Portfolio</h1>
+                    <div class="portfolio-filter">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="web">Web</button>
+                        <button class="filter-btn" data-filter="app">App</button>
+                        <button class="filter-btn" data-filter="design">Design</button>
+                    </div>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item" data-category="web">
+                            <img src="image/Screenshot (27).png" alt="Project 1">
+                            <div class="portfolio-overlay">
+                                <h3>Web Project</h3>
+                                <p>Aplikasi web bagi petani untuk mencatat hasil panennya.</p>
+                                <a href="https://github.com/Haruki524/web-panen" target="_blank" class="btn-view">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item" data-category="app">
+                            <img src="image/Screenshot (26).png" alt="Project 2">
+                            <div class="portfolio-overlay">
+                                <h3>Java Application</h3>
+                                <p>Aplikasi CRUD berbasis Java untuk manajemen inventaris sepatu.</p>
+                                <a href="https://github.com/Haruki524/uaspbo/tree/main/uasoop" target="_blank" class="btn-view">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item" data-category="app">
+                            <img src="image/Screenshot (28).png" alt="Project 3">
+                            <div class="portfolio-overlay">
+                                <h3>Dart Application</h3>
+                                <p>Aplikasi bank sampah dengan 5 halaman navigasi, dibangun menggunakan Dart.</p>
+                                <a href="https://github.com/muhamadrofii/uas-flutter-smartcity" target="_blank" class="btn-view">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item" data-category="design">
+                            <img src="image/Screenshot (28).png" alt="Project 4">
+                            <div class="portfolio-overlay">
+                                <h3>Design</h3>
+                                <p>Jasa pembuatan logo desain, animasi, dan edit foto</p>
+                                <a href="https://id.pinterest.com/alfanieka/" target="_blank" class="btn-view">View Project</a>
+                            </div>
+                        </div>
+                        <!-- Add more portfolio items as needed -->
+                    </div>
+                </div>
+            </section>
+
+                <section id="resume" class="resume">
+                    <div class="wrapper">
+                        <h1>My Resume</h1>
+                        <div class="resume-container">
+                            <div class="resume-box">
+                                <h3>Education</h3>
+                                <div class="resume-item">
+                                    <h4>MI</h4>
+                                    <p>MI Islamiyah Butoh</p>
+                                    <p>2009 - 2015</p>
+                                </div>
+                                <div class="resume-item">
+                                    <h4>MTS</h4>
+                                    <p>MTS At-Tanwir Talun</p>
+                                    <p>2015 - 2018</p>
+                                </div>
+                                <div class="resume-item">
+                                    <h4>SMK</h4>
+                                    <p>SMK Muhammadiyah 2 Sumberejo</p>
+                                    <p>2018 - 2021</p>
+                                </div>
+                            </div>
+                            <div class="resume-box">
+                                <h3>Pengalaman Kerja</h3>
+                                <div class="resume-item">
+                                    <h4>Produksi</h4>
+                                    <p>PT Interkraft</p>
+                                    <p>2021 - 2022</p>
+                                    <p>Job Description</p>
+                                </div>
+                                <div class="resume-item">
+                                    <h4>Internship</h4>
+                                    <p>Company Name</p>
+                                    <p>Summer 2021</p>
+                                    <p>Internship Description</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="blog" class="blog">
+                    <div class="wrapper">
+                        <h1>My Blog</h1>
+                        <p>Check out my latest blog posts and stay updated with my thoughts and insights.</p>
+                        <div class="blog-container">
+                            <div class="blog-box">
+                                <img src="image/Kcross.png" alt="Blog 1">
+                                <div class="blog-text">
+                                    <h4>K-fold Cross Validation</h4>
+                                    <p>Penjelasan tentang pengujian Machine Learning menggunakan metode K-fold Cross Validation.</p>
+                                    <a href="https://yudatzy.blogspot.com/2023/11/pembagian-data.html" target="_blank" class="read-more">Read More</a>
+                                </div>
+                            </div>
+                            <div class="blog-box">
+                                <img src="image/css.png" alt="Blog 2">
+                                <div class="blog-text">
+                                    <h4>Perbedaan HTML, CSS, dan JS</h4>
+                                    <p>Penjelasan tentang apa itu Html, Css, dan Js, beserta perbedaan diantaranya.</p>
+                                    <a href="https://yudatzy.blogspot.com/2024/06/perbedaan-html-css-dan-javascript.html" target="_blank" class="read-more">Read More</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact" class="contact">
+                    <div class="wrapper">
+                        <h1>Contact Me</h1>
+                        <div class="contact-container">
+                            <div class="contact-box">
+                                <div class="whatsapp-text">
+                                    <h3>Get in Touch</h3>
+                                    <p>Anda dapat menghubungi saya melalui WhatsApp.</p>
+                                </div>
+                                <a href="https://wa.me/+6283144853630" target="_blank" class="whatsapp-link">
+                                    WhatsApp <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <div class="contact-box">
+                                <h3 style="text-align: center;">Kirimi saya pesan</h3>
+                                <form id="contact-form">
+                                    <input type="text" placeholder="Your Name" required>
+                                    <input type="email" placeholder="Your Email" required>
+                                    <textarea placeholder="Your Message" required></textarea>
+                                    <button type="submit">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="copyright" class="copyright">
+                    <div class="centered-content">
+                        <h4 style="color: azure;">Copyright by 残された愛</h4>
+                        <div class="social-icons mt-4">
+                            <a href="https://www.facebook.com/profile.php?id=100085929996602" target="_blank" style="color: blue;"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/i.eat.my.ssd.256.gb?igsh=cHVuZGVtbnk3Mnow" target="_blank" style="color: red;"><i class="fab fa-instagram"></i></a>
+                            <a href="https://pin.it/3HVfDx8oO" target="_blank" style="color: green;"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </section>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('background-music');
+            audio.volume = 0.80;
+        });
+
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function() {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed = new Typed(".input", {
+            strings: ["...", "Frontend Developer", "UX Designer", "Web Developer", "Photo Designer"],
+            typeSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        })
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+            function filterItems(filterValue) {
+                portfolioItems.forEach(item => {
+                    item.classList.add('hidden');
+                    setTimeout(() => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.classList.remove('hidden');
+                                item.classList.add('visible');
+                            }, 50);
+                        } else {
+                            item.style.display = 'none';
+                            item.classList.remove('visible');
+                        }
+                    }, 300);
+                });
+            }
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filterValue = button.getAttribute('data-filter');
+            
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    filterItems(filterValue);
+                });
+            });
+            filterItems('all');
+        });
+
+        const contactForm = document.getElementById('contact-form');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = this.elements[0].value;
+            const email = this.elements[1].value;
+            const message = this.elements[2].value;
+
+            // Construct the email body
+            const emailBody = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+
+            // Replace with your email address
+            const emailTo = 'yuuhasegawa21@gmail.com';
+
+            // Encode the email body for URL
+            const encodedBody = encodeURIComponent(emailBody);
+
+            // Construct the mailto link
+            const mailtoLink = `mailto:${emailTo}?body=${encodedBody}`;
+
+            // Open the mailto link in a new tab
+            window.open(mailtoLink, '_blank');
+
+            // Reset form fields
+            this.reset();
+        });
+
+        
+    </script>
+</body>
+</html>
